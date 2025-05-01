@@ -1,6 +1,5 @@
-FROM node
-WORKDIR /app
-COPY package.json package.json
+FROM node:10
+WORKDIR /use/app
 RUN npm install 
 COPY . . 
 EXPOSE 9981
